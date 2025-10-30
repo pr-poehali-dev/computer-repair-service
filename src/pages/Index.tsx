@@ -54,6 +54,7 @@ const Index = () => {
   ];
 
   const pricing = [
+    { service: "Вызов мастера", price: "500 ₽" },
     { service: "Установка Windows", price: "1500 ₽" },
     { service: "Установка драйверов", price: "500 ₽" },
     { service: "Прошивка Android", price: "1000 ₽" },
