@@ -127,15 +127,19 @@ const Index = () => {
 
       <section id="main" className="pt-24 pb-16 px-4">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
             <div className="animate-fade-in">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                Ремонт компьютеров в Зеленограде
-              </h1>
+              <img
+                src="https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/148b1b7b-9c5b-4ada-bf51-e0208db5664f.jpg"
+                alt="Ремонт компьютеров в Зеленограде"
+                className="rounded-lg shadow-2xl w-full max-w-4xl mx-auto"
+              />
+            </div>
+            <div className="text-center animate-fade-in max-w-3xl mx-auto">
               <p className="text-xl text-muted-foreground mb-8">
                 Установка Windows • Прошивка телефонов • Удаление вирусов • Установка программ
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 justify-center">
                 <Button size="lg" onClick={() => scrollToSection("services")} className="group">
                   Наши услуги
                   <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
@@ -145,13 +149,6 @@ const Index = () => {
                   Позвонить
                 </Button>
               </div>
-            </div>
-            <div className="animate-scale-in">
-              <img
-                src="https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/5f4023d8-e812-4cea-9779-2332631b407b.jpg"
-                alt="IT Service"
-                className="rounded-lg shadow-2xl w-full"
-              />
             </div>
           </div>
         </div>
