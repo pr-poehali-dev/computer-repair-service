@@ -54,7 +54,7 @@ const Index = () => {
   ];
 
   const pricing = [
-    { service: "Вызов мастера", price: "500 ₽" },
+    { service: "Вызов мастера и диагностика", price: "500 ₽" },
     { service: "Установка Windows", price: "1500 ₽" },
     { service: "Установка драйверов", price: "500 ₽" },
     { service: "Прошивка Android", price: "1000 ₽" },
@@ -63,7 +63,6 @@ const Index = () => {
     { service: "Установка антивируса", price: "600 ₽" },
     { service: "Установка программ (за ед.)", price: "500 ₽" },
     { service: "Настройка интернета", price: "700 ₽" },
-    { service: "Диагностика компьютера", price: "Бесплатно" },
     { service: "Замена комплектующих", price: "от 1200 ₽" }
   ];
 
