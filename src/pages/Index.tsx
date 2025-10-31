@@ -240,7 +240,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Отзывы клиентов</h2>
             <p className="text-xl text-muted-foreground">
-              Что говорят клиенты о работе Евгения
+              Что говорят клиенты
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
