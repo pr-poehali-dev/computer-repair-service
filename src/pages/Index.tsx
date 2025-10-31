@@ -100,7 +100,7 @@ const Index = () => {
               <img 
                 src="https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/234bfcf9-85dc-4c33-ada2-82980f753a49.jpg" 
                 alt="Зел ремонт" 
-                className="h-[68px] w-auto"
+                className="h-[204px] w-auto"
               />
             </div>
             <div className="hidden md:flex gap-6">
