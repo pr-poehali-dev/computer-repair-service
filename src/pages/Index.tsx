@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
 import { useState } from "react";
+import jsPDF from "jspdf";
+import autoTable from "jspdf-autotable";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("main");
@@ -14,6 +16,35 @@ const Index = () => {
     setMobileMenuOpen(false);
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const downloadPricePDF = () => {
+    const doc = new jsPDF();
+    
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(18);
+    doc.text("Прайс-лист EvKomp", 105, 20, { align: "center" });
+    
+    doc.setFontSize(10);
+    doc.setFont("helvetica", "normal");
+    doc.text("Зеленоград | +7 (925) 654-32-13", 105, 28, { align: "center" });
+    
+    const tableData = pricing.map(item => [item.service, item.price]);
+    
+    autoTable(doc, {
+      startY: 35,
+      head: [["Услуга", "Цена"]],
+      body: tableData,
+      theme: "grid",
+      headStyles: { fillColor: [59, 130, 246], fontSize: 11, fontStyle: "bold" },
+      bodyStyles: { fontSize: 10 },
+      columnStyles: {
+        0: { cellWidth: 140 },
+        1: { cellWidth: 40, halign: "right" }
+      }
+    });
+    
+    doc.save("evkomp-price.pdf");
   };
 
   const services = [
@@ -281,6 +312,12 @@ const Index = () => {
               </div>
             </CardContent>
           </Card>
+          <div className="text-center mt-8">
+            <Button onClick={downloadPricePDF} size="lg" className="gap-2">
+              <Icon name="Download" size={20} />
+              Скачать прайс-лист (PDF)
+            </Button>
+          </div>
         </div>
       </section>
 
