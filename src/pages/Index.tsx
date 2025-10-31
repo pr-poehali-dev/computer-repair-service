@@ -57,15 +57,26 @@ const Index = () => {
 
   const pricing = [
     { service: "Вызов мастера и диагностика", price: "500 ₽" },
-    { service: "Установка Windows", price: "1500 ₽" },
-    { service: "Установка драйверов", price: "500 ₽" },
+    { service: "Замена HDD/SSD", price: "750 ₽" },
+    { service: "Замена процессора", price: "650 ₽" },
+    { service: "Замена оперативной памяти", price: "680 ₽" },
+    { service: "Ремонт системы охлаждения", price: "750 ₽" },
+    { service: "Ремонт компьютеров", price: "550 ₽" },
+    { service: "Замена блока питания", price: "750 ₽" },
+    { service: "Настройка интернета", price: "650 ₽" },
+    { service: "Помощь с компьютером удаленно", price: "500 ₽" },
+    { service: "Чистка", price: "350 ₽" },
+    { service: "Установка Windows", price: "750 ₽" },
+    { service: "Настройка Windows", price: "350 ₽" },
+    { service: "Восстановление Windows", price: "450 ₽" },
+    { service: "Установка Microsoft Office", price: "400 ₽" },
+    { service: "Установка драйверов", price: "190 ₽" },
+    { service: "Установка Антивируса", price: "350 ₽" },
+    { service: "Удаление вирусов", price: "500 ₽" },
+    { service: "Компьютерная помощь на дому", price: "500 ₽" },
+    { service: "Удаленная настройка компьютера", price: "500 ₽" },
     { service: "Прошивка Android", price: "1000 ₽" },
-    { service: "Прошивка iOS", price: "1500 ₽" },
-    { service: "Удаление вирусов", price: "800 ₽" },
-    { service: "Установка антивируса", price: "600 ₽" },
-    { service: "Установка программ (за ед.)", price: "500 ₽" },
-    { service: "Настройка интернета", price: "700 ₽" },
-    { service: "Замена комплектующих", price: "от 1200 ₽" }
+    { service: "Прошивка iOS", price: "1500 ₽" }
   ];
 
   const reviews = [
