@@ -188,9 +188,7 @@ const Index = () => {
             <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">Евгений Кранин — ваш компьютерный мастер</h1>
             <p className="text-lg text-muted-foreground mb-4">Выезд по Зеленограду и ближайшим населенным пунктам. 
 Удаленная компьютерная помощь по всей России.</p>
-            <p className="text-xl text-muted-foreground mb-8">
-              Более 10 лет опыта в ремонте компьютеров и IT-услугах
-            </p>
+            <p className="text-xl text-muted-foreground mb-8">Более 20 лет опыта в ремонте компьютерной техники и IT-услугах</p>
             <p className="text-lg text-muted-foreground mb-8">
               Установка Windows • Прошивка телефонов • Удаление вирусов • Установка программ
             </p>
