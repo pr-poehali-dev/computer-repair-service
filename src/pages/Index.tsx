@@ -88,7 +88,7 @@ const Index = () => {
   ];
 
   const benefits = [
-    { icon: "Clock", title: "Быстро", text: "Выезд в день обращения" },
+    { icon: "Clock", title: "Удобно", text: "Договоримся на удобное вам время" },
     { icon: "BadgeCheck", title: "Качественно", text: "Гарантия на все работы" },
     { icon: "Wallet", title: "Недорого", text: "Честные цены без накруток" },
     { icon: "MapPin", title: "Зеленоград", text: "Работаем по всему городу" }
