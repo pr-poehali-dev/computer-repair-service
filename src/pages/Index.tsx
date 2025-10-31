@@ -185,10 +185,9 @@ const Index = () => {
       <section id="main" className="pt-24 pb-16 px-4">
         <div className="container mx-auto">
           <div className="text-center animate-fade-in max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-              Евгений — ваш компьютерный мастер
-            </h1>
-            <p className="text-lg text-muted-foreground mb-4">Выезд по Зеленограду и ближайшим населенным пунктам. Удаленная компьютерная помощь по всей России.</p>
+            <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">Евгений Кранин — ваш компьютерный мастер</h1>
+            <p className="text-lg text-muted-foreground mb-4">Выезд по Зеленограду и ближайшим населенным пунктам. 
+Удаленная компьютерная помощь по всей России.</p>
             <p className="text-xl text-muted-foreground mb-8">
               Более 10 лет опыта в ремонте компьютеров и IT-услугах
             </p>
