@@ -121,9 +121,15 @@ const Index = () => {
                 </button>
               ))}
             </div>
-            <Button onClick={() => scrollToSection("contacts")} size="sm">
-              Оставить заявку
-            </Button>
+            <div className="flex items-center gap-4">
+              <a href="tel:+79256543213" className="hidden md:flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors">
+                <Icon name="Phone" size={18} />
+                +7 (925) 654-32-13
+              </a>
+              <Button onClick={() => scrollToSection("contacts")} size="sm">
+                Оставить заявку
+              </Button>
+            </div>
           </div>
         </div>
       </nav>
