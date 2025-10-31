@@ -143,11 +143,11 @@ const Index = () => {
             <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
               Евгений — ваш компьютерный мастер
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Более 10 лет опыта в ремонте компьютеров и IT-услугах
-            </p>
             <p className="text-lg text-muted-foreground mb-4">
               Выезд по Зеленограду и окрестностям. Удаленная помощь по всей России.
+            </p>
+            <p className="text-xl text-muted-foreground mb-8">
+              Более 10 лет опыта в ремонте компьютеров и IT-услугах
             </p>
             <p className="text-lg text-muted-foreground mb-8">
               Установка Windows • Прошивка телефонов • Удаление вирусов • Установка программ
@@ -223,7 +223,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Прайс-лист</h2>
             <p className="text-xl text-muted-foreground">
-              Приблизительная стоимость обговаривается по телефону.
+              Приблизительная стоимость обговаривается по телефону
             </p>
           </div>
           <Card className="max-w-3xl mx-auto">
