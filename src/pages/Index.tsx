@@ -102,7 +102,7 @@ const Index = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2">
               <Icon name="Monitor" className="text-primary" size={28} />
-              <span className="font-bold text-xl">Зел ремонт</span>
+              <span className="font-bold text-xl">Ремкомп</span>
             </div>
             <div className="hidden md:flex gap-6">
               {["main", "services", "pricing", "about", "reviews", "contacts"].map((section) => (
@@ -322,7 +322,7 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Icon name="Monitor" size={28} />
-            <span className="font-bold text-xl">Зел ремонт</span>
+            <span className="font-bold text-xl">Ремкомп</span>
           </div>
           <p className="text-background/70">© 2025 Все права защищены</p>
         </div>
