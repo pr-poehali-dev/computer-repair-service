@@ -70,17 +70,20 @@ const Index = () => {
     {
       name: "Алексей М.",
       rating: 5,
-      text: "Быстро установили Windows 11 и все необходимые программы. Очень доволен результатом!"
+      text: "Быстро установили Windows 11 и все необходимые программы. Очень доволен результатом!",
+      photo: "https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/4ac004e3-9a69-44a4-ada8-cc5c81090100.jpg"
     },
     {
       name: "Мария С.",
       rating: 5,
-      text: "Спасли мой телефон после неудачного обновления. Профессионалы своего дела!"
+      text: "Спасли мой телефон после неудачного обновления. Профессионалы своего дела!",
+      photo: "https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/8823a066-3daa-4827-924a-dd4efb7edd88.jpg"
     },
     {
       name: "Дмитрий К.",
       rating: 5,
-      text: "Удалили все вирусы и настроили защиту. Компьютер работает как новый. Рекомендую!"
+      text: "Удалили все вирусы и настроили защиту. Компьютер работает как новый. Рекомендую!",
+      photo: "https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/04c85ccd-e475-43cd-9489-0218ea37c2c0.jpg"
     }
   ];
 
@@ -235,12 +238,21 @@ const Index = () => {
             {reviews.map((review, index) => (
               <Card key={index} className="animate-fade-in">
                 <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Icon key={i} name="Star" className="text-yellow-400 fill-yellow-400" size={18} />
-                    ))}
+                  <div className="flex items-center gap-4 mb-4">
+                    <img 
+                      src={review.photo} 
+                      alt={review.name} 
+                      className="w-16 h-16 rounded-full object-cover"
+                    />
+                    <div>
+                      <CardTitle className="text-lg mb-2">{review.name}</CardTitle>
+                      <div className="flex items-center gap-1">
+                        {[...Array(review.rating)].map((_, i) => (
+                          <Icon key={i} name="Star" className="text-yellow-400 fill-yellow-400" size={16} />
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                  <CardTitle className="text-lg">{review.name}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">{review.text}</p>
