@@ -295,17 +295,17 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Icon name="Mail" className="text-primary" size={24} />
+                    <Icon name="MessageCircle" className="text-primary" size={24} />
                     <div>
-                      <div className="font-medium">Email</div>
-                      <div className="text-muted-foreground">info@it-service-zelenograd.ru</div>
+                      <div className="font-medium">WhatsApp</div>
+                      <div className="text-muted-foreground">+7 (925) 654-32-13</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Icon name="MapPin" className="text-primary" size={24} />
+                    <Icon name="Send" className="text-primary" size={24} />
                     <div>
-                      <div className="font-medium">Адрес</div>
-                      <div className="text-muted-foreground">г. Зеленоград</div>
+                      <div className="font-medium">Telegram</div>
+                      <div className="text-muted-foreground">@itmaster_zelenograd</div>
                     </div>
                   </div>
                 </div>
@@ -318,17 +318,9 @@ const Index = () => {
                     <label className="block text-sm font-medium mb-2">Телефон</label>
                     <Input placeholder="+7 (999) 123-45-67" />
                   </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Услуга</label>
-                    <Input placeholder="Например: Установка Windows" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Комментарий</label>
-                    <Textarea placeholder="Опишите вашу проблему..." rows={4} />
-                  </div>
                   <Button className="w-full" size="lg">
-                    <Icon name="Send" className="mr-2" size={20} />
-                    Отправить заявку
+                    <Icon name="PhoneCall" className="mr-2" size={20} />
+                    Перезвонить
                   </Button>
                 </form>
               </CardContent>
