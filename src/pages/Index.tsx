@@ -272,7 +272,7 @@ const Index = () => {
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">Связаться с Мастером</h2>
               <p className="text-xl text-muted-foreground">
-                Оставьте заявку и Евгений свяжется с вами в ближайшее время
+                Оставьте заявку и я свяжусь с вами в ближайшее время
               </p>
             </div>
             <Card>
