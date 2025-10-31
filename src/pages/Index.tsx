@@ -159,7 +159,6 @@ const Index = () => {
                 <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Button>
               <Button size="lg" variant="outline" onClick={() => scrollToSection("contacts")}>
-                <Icon name="Phone" className="mr-2" size={20} />
                 Связаться со мной
               </Button>
             </div>
