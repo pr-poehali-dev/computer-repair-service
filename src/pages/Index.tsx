@@ -10,32 +10,12 @@ import autoTable from "jspdf-autotable";
 const Index = () => {
   const [activeSection, setActiveSection] = useState("main");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [selectedServices, setSelectedServices] = useState<string[]>([]);
 
   const scrollToSection = (id: string) => {
     setActiveSection(id);
     setMobileMenuOpen(false);
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const toggleService = (service: string) => {
-    setSelectedServices(prev => 
-      prev.includes(service) 
-        ? prev.filter(s => s !== service)
-        : [...prev, service]
-    );
-  };
-
-  const calculateTotal = () => {
-    return selectedServices.reduce((total, serviceName) => {
-      const item = pricing.find(p => p.service === serviceName);
-      if (item) {
-        const price = parseInt(item.price.replace(/\D/g, ''));
-        return total + price;
-      }
-      return total;
-    }, 0);
   };
 
   const downloadPricePDF = () => {
@@ -320,85 +300,19 @@ const Index = () => {
               Приблизительная стоимость обговаривается по телефону
             </p>
           </div>
-          
-          <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="Calculator" size={24} />
-                  Калькулятор стоимости
-                </CardTitle>
-                <CardDescription>Выберите нужные услуги для расчёта</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2 max-h-[400px] overflow-y-auto pr-2">
-                  {pricing.map((item, index) => (
-                    <div 
-                      key={index} 
-                      onClick={() => toggleService(item.service)}
-                      className={`flex items-center justify-between p-3 rounded-lg border cursor-pointer transition-all ${
-                        selectedServices.includes(item.service) 
-                          ? 'bg-primary/10 border-primary' 
-                          : 'hover:bg-secondary/50 border-transparent'
-                      }`}
-                    >
-                      <div className="flex items-center gap-3">
-                        <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
-                          selectedServices.includes(item.service) 
-                            ? 'bg-primary border-primary' 
-                            : 'border-muted-foreground/30'
-                        }`}>
-                          {selectedServices.includes(item.service) && (
-                            <Icon name="Check" size={14} className="text-white" />
-                          )}
-                        </div>
-                        <span className="font-medium text-sm">{item.service}</span>
-                      </div>
-                      <span className="text-sm font-bold text-primary">{item.price}</span>
-                    </div>
-                  ))}
-                </div>
-                
-                {selectedServices.length > 0 && (
-                  <div className="mt-6 pt-6 border-t space-y-4">
-                    <div className="flex items-center justify-between text-lg">
-                      <span className="font-semibold">Итого:</span>
-                      <span className="text-2xl font-bold text-primary">{calculateTotal()} ₽</span>
-                    </div>
-                    <Button 
-                      onClick={() => setSelectedServices([])} 
-                      variant="outline" 
-                      className="w-full"
-                    >
-                      Очистить выбор
-                    </Button>
+          <Card className="max-w-3xl mx-auto">
+            <CardContent className="p-0">
+              <div className="divide-y">
+                {pricing.map((item, index) => (
+                  <div key={index} className="flex items-center justify-between p-4 hover:bg-secondary/50 transition-colors">
+                    <span className="font-medium">{item.service}</span>
+                    <span className="text-lg font-bold text-primary">{item.price}</span>
                   </div>
-                )}
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="FileText" size={24} />
-                  Полный прайс-лист
-                </CardTitle>
-                <CardDescription>Все наши услуги и цены</CardDescription>
-              </CardHeader>
-              <CardContent className="p-0">
-                <div className="divide-y max-h-[400px] overflow-y-auto">
-                  {pricing.map((item, index) => (
-                    <div key={index} className="flex items-center justify-between p-4 hover:bg-secondary/50 transition-colors">
-                      <span className="font-medium text-sm">{item.service}</span>
-                      <span className="text-sm font-bold text-primary">{item.price}</span>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center">
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+          <div className="text-center mt-8">
             <Button onClick={downloadPricePDF} size="lg" className="gap-2">
               <Icon name="Download" size={20} />
               Скачать прайс-лист (PDF)
