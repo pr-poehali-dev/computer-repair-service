@@ -114,7 +114,7 @@ const Index = () => {
                 >
                   {section === "main" && "Главная"}
                   {section === "services" && "Услуги"}
-                  {section === "pricing" && "Прайс"}
+                  {section === "pricing" && "Стоимость услуг"}
                   {section === "about" && "О нас"}
                   {section === "reviews" && "Отзывы"}
                   {section === "contacts" && "Контакты"}
@@ -147,13 +147,13 @@ const Index = () => {
               Установка Windows • Прошивка телефонов • Удаление вирусов • Установка программ
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Button size="lg" onClick={() => scrollToSection("services")} className="group">
-                Мои услуги
+              <Button size="lg" onClick={() => scrollToSection("pricing")} className="group">
+                Стоимость услуг
                 <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Button>
               <Button size="lg" variant="outline" onClick={() => scrollToSection("contacts")}>
                 <Icon name="Phone" className="mr-2" size={20} />
-                Оставить заявку
+                Онлайн заявка
               </Button>
             </div>
           </div>
