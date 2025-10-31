@@ -129,7 +129,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center animate-fade-in max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Ремонт компьютеров в Зеленограде
+              Компьютерный мастер Зеленоград
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Установка Windows • Прошивка телефонов • Удаление вирусов • Установка программ
