@@ -147,7 +147,7 @@ const Index = () => {
               </Button>
               <Button size="lg" variant="outline" onClick={() => scrollToSection("contacts")}>
                 <Icon name="Phone" className="mr-2" size={20} />
-                Позвонить Евгению
+                Позвонить мастеру
               </Button>
             </div>
           </div>
