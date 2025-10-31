@@ -286,7 +286,21 @@ const Index = () => {
             </div>
             <Card>
               <CardContent className="pt-6">
-                <div className="mb-8 pb-8 border-b space-y-4">
+                <form className="space-y-4 mb-8 pb-8 border-b">
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Ваше имя</label>
+                    <Input placeholder="" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Телефон</label>
+                    <Input placeholder="" />
+                  </div>
+                  <Button className="w-full" size="lg">
+                    <Icon name="PhoneCall" className="mr-2" size={20} />
+                    Перезвонить
+                  </Button>
+                </form>
+                <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Icon name="Phone" className="text-primary" size={24} />
                     <div>
@@ -309,20 +323,6 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-                <form className="space-y-4">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Ваше имя</label>
-                    <Input placeholder="Иван Иванов" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Телефон</label>
-                    <Input placeholder="+7 (999) 123-45-67" />
-                  </div>
-                  <Button className="w-full" size="lg">
-                    <Icon name="PhoneCall" className="mr-2" size={20} />
-                    Перезвонить
-                  </Button>
-                </form>
               </CardContent>
             </Card>
           </div>
