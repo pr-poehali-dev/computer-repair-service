@@ -286,29 +286,7 @@ const Index = () => {
             </div>
             <Card>
               <CardContent className="pt-6">
-                <form className="space-y-4">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Ваше имя</label>
-                    <Input placeholder="Иван Иванов" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Телефон</label>
-                    <Input placeholder="+7 (999) 123-45-67" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Услуга</label>
-                    <Input placeholder="Например: Установка Windows" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Комментарий</label>
-                    <Textarea placeholder="Опишите вашу проблему..." rows={4} />
-                  </div>
-                  <Button className="w-full" size="lg">
-                    <Icon name="Send" className="mr-2" size={20} />
-                    Отправить заявку
-                  </Button>
-                </form>
-                <div className="mt-8 pt-8 border-t space-y-4">
+                <div className="mb-8 pb-8 border-b space-y-4">
                   <div className="flex items-center gap-3">
                     <Icon name="Phone" className="text-primary" size={24} />
                     <div>
@@ -331,6 +309,28 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
+                <form className="space-y-4">
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Ваше имя</label>
+                    <Input placeholder="Иван Иванов" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Телефон</label>
+                    <Input placeholder="+7 (999) 123-45-67" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Услуга</label>
+                    <Input placeholder="Например: Установка Windows" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Комментарий</label>
+                    <Textarea placeholder="Опишите вашу проблему..." rows={4} />
+                  </div>
+                  <Button className="w-full" size="lg">
+                    <Icon name="Send" className="mr-2" size={20} />
+                    Отправить заявку
+                  </Button>
+                </form>
               </CardContent>
             </Card>
           </div>
