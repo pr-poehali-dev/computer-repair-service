@@ -185,7 +185,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Услуги</h2>
             <p className="text-xl text-muted-foreground">
-              Качественный ремонт и настройка вашей техники от Евгения
+              Здесь представлен некоторый список услуг
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
