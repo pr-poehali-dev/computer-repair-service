@@ -97,7 +97,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2">
-              <Icon name="Wrench" className="text-primary" size={28} />
+              <Icon name="Monitor" className="text-primary" size={28} />
               <span className="font-bold text-xl">Зел ремонт</span>
             </div>
             <div className="hidden md:flex gap-6">
