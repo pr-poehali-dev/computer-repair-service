@@ -211,7 +211,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Прайс-лист</h2>
             <p className="text-xl text-muted-foreground">
-              Прозрачные цены на все виды работ
+              Цена без лишних накруток. Приблизительная стоимость обговаривается по телефону.
             </p>
           </div>
           <Card className="max-w-3xl mx-auto">
