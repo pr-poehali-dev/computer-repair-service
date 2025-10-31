@@ -205,12 +205,7 @@ const Index = () => {
                   <CardDescription>{service.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-primary">{service.price}</span>
-                    <Button variant="ghost" size="sm" onClick={() => scrollToSection("contacts")}>
-                      Заказать
-                    </Button>
-                  </div>
+                  <span className="text-2xl font-bold text-primary">{service.price}</span>
                 </CardContent>
               </Card>
             ))}
