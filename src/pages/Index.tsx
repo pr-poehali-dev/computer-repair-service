@@ -126,6 +126,14 @@ const Index = () => {
                 <Icon name="Phone" size={18} />
                 +7 (925) 654-32-13
               </a>
+              <a href="https://wa.me/79256543213" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors">
+                <Icon name="MessageCircle" size={18} />
+                WhatsApp
+              </a>
+              <a href="https://t.me/itmaster_zelenograd" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors">
+                <Icon name="Send" size={18} />
+                Telegram
+              </a>
             </div>
           </div>
         </div>
