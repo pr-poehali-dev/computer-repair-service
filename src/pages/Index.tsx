@@ -321,10 +321,10 @@ const Index = () => {
       <footer className="bg-foreground text-background py-8 px-4">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Icon name="Wrench" size={24} />
-            <span className="font-bold text-lg">IT-Сервис Зеленоград</span>
+            <Icon name="Monitor" size={28} />
+            <span className="font-bold text-xl">Зел ремонт</span>
           </div>
-          <p className="text-background/70">© 2024 Все права защищены</p>
+          <p className="text-background/70">© 2025 Все права защищены</p>
         </div>
       </footer>
     </div>
