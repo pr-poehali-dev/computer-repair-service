@@ -137,7 +137,7 @@ const Index = () => {
       <section id="main" className="pt-24 pb-16 px-4">
         <div className="container mx-auto">
           <div className="text-center animate-fade-in max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
               Евгений — ваш компьютерный мастер
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
