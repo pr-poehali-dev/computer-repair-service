@@ -132,19 +132,22 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center animate-fade-in max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Компьютерный мастер Зеленоград
+              Евгений — ваш компьютерный мастер
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
+              Более 10 лет опыта в ремонте компьютеров и IT-услугах в Зеленограде
+            </p>
+            <p className="text-lg text-muted-foreground mb-8">
               Установка Windows • Прошивка телефонов • Удаление вирусов • Установка программ
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" onClick={() => scrollToSection("services")} className="group">
-                Наши услуги
+                Мои услуги
                 <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Button>
               <Button size="lg" variant="outline" onClick={() => scrollToSection("contacts")}>
                 <Icon name="Phone" className="mr-2" size={20} />
-                Позвонить
+                Позвонить Евгению
               </Button>
             </div>
           </div>
@@ -176,7 +179,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Услуги</h2>
             <p className="text-xl text-muted-foreground">
-              Полный спектр IT-услуг для вашей техники
+              Качественный ремонт и настройка вашей техники от Евгения
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -231,7 +234,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Отзывы клиентов</h2>
             <p className="text-xl text-muted-foreground">
-              Что говорят о нас наши клиенты
+              Что говорят клиенты о работе Евгения
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -267,9 +270,9 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">Связаться с нами</h2>
+              <h2 className="text-4xl font-bold mb-4">Связаться с Евгением</h2>
               <p className="text-xl text-muted-foreground">
-                Оставьте заявку и мы свяжемся с вами в ближайшее время
+                Оставьте заявку и Евгений свяжется с вами в ближайшее время
               </p>
             </div>
             <Card>
