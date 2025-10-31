@@ -96,12 +96,9 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-3">
-              <img 
-                src="https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/42956c51-22c9-4db6-9a73-f58297775fa5.jpg" 
-                alt="Зел ремонт" 
-                className="h-[102px] w-auto"
-              />
+            <div className="flex items-center gap-2">
+              <Icon name="Wrench" className="text-primary" size={28} />
+              <span className="font-bold text-xl">Зел ремонт</span>
             </div>
             <div className="hidden md:flex gap-6">
               {["main", "services", "pricing", "about", "reviews", "contacts"].map((section) => (
