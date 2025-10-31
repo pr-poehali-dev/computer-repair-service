@@ -171,7 +171,7 @@ const Index = () => {
       <section id="services" className="py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Наши услуги</h2>
+            <h2 className="text-4xl font-bold mb-4">Услуги</h2>
             <p className="text-xl text-muted-foreground">
               Полный спектр IT-услуг для вашей техники
             </p>
