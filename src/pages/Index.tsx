@@ -126,9 +126,6 @@ const Index = () => {
                 <Icon name="Phone" size={18} />
                 +7 (925) 654-32-13
               </a>
-              <Button onClick={() => scrollToSection("contacts")} size="sm">
-                Оставить заявку
-              </Button>
             </div>
           </div>
         </div>
@@ -156,7 +153,7 @@ const Index = () => {
               </Button>
               <Button size="lg" variant="outline" onClick={() => scrollToSection("contacts")}>
                 <Icon name="Phone" className="mr-2" size={20} />
-                Онлайн заявка
+                Связаться со мной
               </Button>
             </div>
           </div>
