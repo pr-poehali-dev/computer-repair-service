@@ -270,7 +270,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">Связаться с Евгением</h2>
+              <h2 className="text-4xl font-bold mb-4">Связаться с Мастером</h2>
               <p className="text-xl text-muted-foreground">
                 Оставьте заявку и Евгений свяжется с вами в ближайшее время
               </p>
