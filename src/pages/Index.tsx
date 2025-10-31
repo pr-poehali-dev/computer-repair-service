@@ -7,9 +7,11 @@ import { useState } from "react";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("main");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
     setActiveSection(id);
+    setMobileMenuOpen(false);
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
   };
@@ -133,9 +135,51 @@ const Index = () => {
               <a href="https://t.me/itmaster_zelenograd" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center hover:text-primary transition-colors">
                 <Icon name="Send" size={20} />
               </a>
+              <button
+                className="md:hidden"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              >
+                <Icon name={mobileMenuOpen ? "X" : "Menu"} size={24} />
+              </button>
             </div>
           </div>
         </div>
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t bg-white">
+            <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
+              {["main", "services", "pricing", "about", "reviews", "contacts"].map((section) => (
+                <button
+                  key={section}
+                  onClick={() => scrollToSection(section)}
+                  className={`text-left text-sm font-medium transition-colors hover:text-primary ${
+                    activeSection === section ? "text-primary" : "text-foreground/70"
+                  }`}
+                >
+                  {section === "main" && "Главная"}
+                  {section === "services" && "Услуги"}
+                  {section === "pricing" && "Прайс"}
+                  {section === "about" && "Преимущества"}
+                  {section === "reviews" && "Отзывы"}
+                  {section === "contacts" && "Контакты"}
+                </button>
+              ))}
+              <div className="flex flex-col gap-3 pt-2 border-t">
+                <a href="tel:+79256543213" className="flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors">
+                  <Icon name="Phone" size={18} />
+                  +7 (925) 654-32-13
+                </a>
+                <a href="https://wa.me/79256543213" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors">
+                  <Icon name="MessageCircle" size={18} />
+                  WhatsApp
+                </a>
+                <a href="https://t.me/itmaster_zelenograd" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors">
+                  <Icon name="Send" size={18} />
+                  Telegram
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
       </nav>
 
       <section id="main" className="pt-24 pb-16 px-4">
