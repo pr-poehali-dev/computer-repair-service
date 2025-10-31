@@ -114,8 +114,8 @@ const Index = () => {
                 >
                   {section === "main" && "Главная"}
                   {section === "services" && "Услуги"}
-                  {section === "pricing" && "Стоимость услуг"}
-                  {section === "about" && "О нас"}
+                  {section === "pricing" && "Прайс"}
+                  {section === "about" && "Преимущества"}
                   {section === "reviews" && "Отзывы"}
                   {section === "contacts" && "Контакты"}
                 </button>
