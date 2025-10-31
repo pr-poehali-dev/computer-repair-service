@@ -71,19 +71,19 @@ const Index = () => {
       name: "Алексей М.",
       rating: 5,
       text: "Быстро установили Windows 11 и все необходимые программы. Очень доволен результатом!",
-      photo: "https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/4ac004e3-9a69-44a4-ada8-cc5c81090100.jpg"
+      photo: "https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/ff55f116-3d2f-4252-ad91-06312504743e.jpg"
     },
     {
       name: "Мария С.",
       rating: 5,
       text: "Спасли мой телефон после неудачного обновления. Профессионалы своего дела!",
-      photo: "https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/8823a066-3daa-4827-924a-dd4efb7edd88.jpg"
+      photo: "https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/96fd1abb-efb8-4374-b27f-a212f5763344.jpg"
     },
     {
       name: "Дмитрий К.",
       rating: 5,
       text: "Удалили все вирусы и настроили защиту. Компьютер работает как новый. Рекомендую!",
-      photo: "https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/04c85ccd-e475-43cd-9489-0218ea37c2c0.jpg"
+      photo: "https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/ddbbc050-a9ff-4b06-985c-8ad38b025c25.jpg"
     }
   ];
 
