@@ -47,44 +47,7 @@ const Index = () => {
     doc.save("evkomp-price.pdf");
   };
 
-  const services = [
-    {
-      icon: "Laptop",
-      title: "Установка Windows",
-      description: "Установка и настройка операционной системы Windows любой версии",
-      price: "от 1500 ₽"
-    },
-    {
-      icon: "Smartphone",
-      title: "Прошивка телефонов",
-      description: "Обновление и перепрошивка смартфонов всех марок",
-      price: "от 1000 ₽"
-    },
-    {
-      icon: "Shield",
-      title: "Лечение от вирусов",
-      description: "Удаление вирусов и вредоносного ПО, защита системы",
-      price: "от 800 ₽"
-    },
-    {
-      icon: "Download",
-      title: "Установка программ",
-      description: "Установка и настройка любого программного обеспечения",
-      price: "от 500 ₽"
-    },
-    {
-      icon: "HardDrive",
-      title: "Ремонт компьютеров",
-      description: "Диагностика и ремонт компьютерной техники",
-      price: "от 1200 ₽"
-    },
-    {
-      icon: "Settings",
-      title: "Настройка систем",
-      description: "Оптимизация и настройка работы компьютера",
-      price: "от 700 ₽"
-    }
-  ];
+
 
   const pricing = [
     { service: "Вызов мастера и диагностика", price: "500 ₽" },
@@ -147,7 +110,7 @@ const Index = () => {
               <span className="font-bold text-xl">EvKomp</span>
             </div>
             <div className="hidden md:flex gap-6">
-              {["main", "services", "pricing", "about", "reviews", "contacts"].map((section) => (
+              {["main", "pricing", "about", "reviews", "contacts"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -156,7 +119,6 @@ const Index = () => {
                   }`}
                 >
                   {section === "main" && "Главная"}
-                  {section === "services" && "Услуги"}
                   {section === "pricing" && "Прайс"}
                   {section === "about" && "Преимущества"}
                   {section === "reviews" && "Отзывы"}
@@ -187,7 +149,7 @@ const Index = () => {
         {mobileMenuOpen && (
           <div className="md:hidden border-t bg-white">
             <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
-              {["main", "services", "pricing", "about", "reviews", "contacts"].map((section) => (
+              {["main", "pricing", "about", "reviews", "contacts"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -196,7 +158,6 @@ const Index = () => {
                   }`}
                 >
                   {section === "main" && "Главная"}
-                  {section === "services" && "Услуги"}
                   {section === "pricing" && "Прайс"}
                   {section === "about" && "Преимущества"}
                   {section === "reviews" && "Отзывы"}
@@ -263,32 +224,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="services" className="py-16 px-4">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Услуги</h2>
-            <p className="text-xl text-muted-foreground">
-              Здесь представлен некоторый список услуг
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {services.map((service, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all hover:-translate-y-1 animate-fade-in">
-                <CardHeader>
-                  <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <Icon name={service.icon} className="text-primary" size={28} />
-                  </div>
-                  <CardTitle>{service.title}</CardTitle>
-                  <CardDescription>{service.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <span className="text-2xl font-bold text-primary">{service.price}</span>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       <section id="pricing" className="py-16 px-4 bg-secondary/30">
         <div className="container mx-auto">
