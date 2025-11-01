@@ -228,11 +228,13 @@ const Index = () => {
                 </div>
               </div>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                <Button size="lg" onClick={() => scrollToSection("pricing")} className="group">
+                <Button size="lg" onClick={() => scrollToSection("pricing")} className="group shadow-lg hover:shadow-xl transition-all">
+                  <Icon name="Wallet" className="mr-2" size={20} />
                   Стоимость услуг
                   <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                 </Button>
-                <Button size="lg" variant="outline" onClick={() => scrollToSection("contacts")}>
+                <Button size="lg" variant="outline" onClick={() => scrollToSection("contacts")} className="shadow-md hover:shadow-lg transition-all border-2">
+                  <Icon name="Phone" className="mr-2" size={20} />
                   Связаться со мной
                 </Button>
               </div>
