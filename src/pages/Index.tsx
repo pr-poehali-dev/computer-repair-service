@@ -109,7 +109,7 @@ const Index = () => {
               <span className="font-bold text-xl">EvKomp</span>
             </div>
             <div className="hidden md:flex gap-6">
-              {["main", "pricing", "about", "reviews", "contacts"].map((section) => (
+              {["main", "pricing", "about", "reviews", "aboutme", "contacts"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -121,6 +121,7 @@ const Index = () => {
                   {section === "pricing" && "Прайс"}
                   {section === "about" && "Преимущества"}
                   {section === "reviews" && "Отзывы"}
+                  {section === "aboutme" && "Обо мне"}
                   {section === "contacts" && "Контакты"}
                 </button>
               ))}
@@ -148,7 +149,7 @@ const Index = () => {
         {mobileMenuOpen && (
           <div className="md:hidden border-t bg-white">
             <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
-              {["main", "pricing", "about", "reviews", "contacts"].map((section) => (
+              {["main", "pricing", "about", "reviews", "aboutme", "contacts"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -160,6 +161,7 @@ const Index = () => {
                   {section === "pricing" && "Прайс"}
                   {section === "about" && "Преимущества"}
                   {section === "reviews" && "Отзывы"}
+                  {section === "aboutme" && "Обо мне"}
                   {section === "contacts" && "Контакты"}
                 </button>
               ))}
@@ -188,7 +190,7 @@ const Index = () => {
             <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">Евгений Кранин — ваш компьютерный мастер</h1>
             <p className="text-lg text-muted-foreground mb-4">Выезд по Зеленограду и ближайшим населенным пунктам.
  Удаленная компьютерная помощь по всей России.</p>
-            <p className="text-xl text-muted-foreground mb-8">Более 20 лет опыта в ремонте компьютерной техники и IT-услугах</p>
+
             <p className="text-lg text-muted-foreground mb-8">Установка Windows • Удаление вирусов • Установка программ • Замена и подключение устройств • Прошивка планшетов и телефонов и многое другое</p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" onClick={() => scrollToSection("pricing")} className="group">
@@ -287,6 +289,21 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="aboutme" className="py-16 px-4">
+        <div className="container mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="mb-12">
+              <h2 className="text-4xl font-bold mb-4">Обо мне</h2>
+            </div>
+            <Card>
+              <CardContent className="pt-6">
+                <p className="text-xl text-muted-foreground">Более 20 лет опыта в ремонте компьютерной техники и IT-услугах</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
