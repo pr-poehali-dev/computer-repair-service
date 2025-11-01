@@ -186,7 +186,7 @@ const Index = () => {
 
       <section id="main" className="pt-24 pb-16 px-4">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto animate-fade-in">
+          <div className="grid md:grid-cols-2 gap-12 items-start max-w-6xl mx-auto animate-fade-in">
             <div className="text-center md:text-left">
               <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight text-gray-800">
                 Евгений Кранин — ваш компьютерный мастер
