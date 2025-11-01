@@ -50,27 +50,26 @@ const Index = () => {
 
 
   const pricing = [
-    { service: "Вызов мастера и диагностика", price: "500 ₽" },
-    { service: "Замена HDD/SSD", price: "800 ₽" },
-    { service: "Замена процессора", price: "700 ₽" },
-    { service: "Замена оперативной памяти", price: "700 ₽" },
-    { service: "Ремонт системы охлаждения", price: "800 ₽" },
-    { service: "Ремонт компьютеров", price: "600 ₽" },
-    { service: "Замена блока питания", price: "800 ₽" },
-    { service: "Настройка интернета", price: "700 ₽" },
-    { service: "Помощь с компьютером удаленно", price: "500 ₽" },
-    { service: "Чистка", price: "400 ₽" },
-    { service: "Установка Windows", price: "800 ₽" },
+    { service: "Вызов мастера", price: "Бесплатно" },
+    { service: "Диагностика", price: "500 ₽" },
+    { service: "Установка Windows, Linux, MacOS", price: "1000 ₽" },
     { service: "Настройка Windows", price: "400 ₽" },
-    { service: "Восстановление Windows", price: "500 ₽" },
-    { service: "Установка Microsoft Office", price: "400 ₽" },
-    { service: "Установка драйверов", price: "200 ₽" },
+    { service: "Восстановление Windows", price: "от 1000 ₽" },
+    { service: "Установка и настройка программ (за 1 шт.)", price: "300 ₽" },
+    { service: "Настройка WiFi роутера с подключением устройств", price: "от 500 ₽" },
+    { service: "Чистка", price: "от 400 ₽" },
     { service: "Установка Антивируса", price: "400 ₽" },
-    { service: "Удаление вирусов", price: "500 ₽" },
-    { service: "Компьютерная помощь на дому", price: "500 ₽" },
-    { service: "Удаленная настройка компьютера", price: "500 ₽" },
+    { service: "Удаление вирусов", price: "от 500 ₽" },
+    { service: "Замена процессора", price: "1000 ₽" },
+    { service: "Замена HDD/SSD", price: "500 ₽" },
+    { service: "Замена видеокарты", price: "500 ₽" },
+    { service: "Замена оперативной памяти", price: "500 ₽" },
+    { service: "Замена блока питания", price: "500 ₽" },
+    { service: "Подключения устройств к Wi-Fi", price: "200 ₽" },
+    { service: "Помощь с компьютером удаленно", price: "от 500 ₽" },
+    { service: "Установка драйверов", price: "200 ₽" },
     { service: "Прошивка Android", price: "1000 ₽" },
-    { service: "Прошивка iOS", price: "1500 ₽" }
+    { service: "Прошивка IOS", price: "1000 ₽" }
   ];
 
   const reviews = [
