@@ -186,21 +186,61 @@ const Index = () => {
 
       <section id="main" className="pt-24 pb-16 px-4">
         <div className="container mx-auto">
-          <div className="text-center animate-fade-in max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">Евгений Кранин — ваш компьютерный мастер</h1>
-            <div className="mb-6 space-y-2">
-              <p className="text-lg font-semibold text-primary">Выезд по Зеленограду и ближайшим населенным пунктам</p>
-              <p className="text-lg font-semibold text-primary">Удаленная компьютерная помощь по всей России</p>
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto animate-fade-in">
+            <div className="text-center md:text-left">
+              <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">Евгений Кранин — ваш компьютерный мастер</h1>
+              <div className="mb-6 space-y-2">
+                <p className="text-lg font-semibold text-primary flex items-center gap-2 justify-center md:justify-start">
+                  <Icon name="MapPin" size={20} />
+                  Выезд по Зеленограду и ближайшим населенным пунктам
+                </p>
+                <p className="text-lg font-semibold text-primary flex items-center gap-2 justify-center md:justify-start">
+                  <Icon name="Globe" size={20} />
+                  Удаленная компьютерная помощь по всей России
+                </p>
+              </div>
+              <div className="grid grid-cols-2 gap-3 mb-8 text-sm md:text-base">
+                <div className="flex items-center gap-2">
+                  <Icon name="Laptop" className="text-primary" size={18} />
+                  <span>Установка Windows</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="Shield" className="text-primary" size={18} />
+                  <span>Удаление вирусов</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="Download" className="text-primary" size={18} />
+                  <span>Установка программ</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="HardDrive" className="text-primary" size={18} />
+                  <span>Замена устройств</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="Smartphone" className="text-primary" size={18} />
+                  <span>Прошивка телефонов</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="Wrench" className="text-primary" size={18} />
+                  <span>И многое другое</span>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+                <Button size="lg" onClick={() => scrollToSection("pricing")} className="group">
+                  Стоимость услуг
+                  <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                </Button>
+                <Button size="lg" variant="outline" onClick={() => scrollToSection("contacts")}>
+                  Связаться со мной
+                </Button>
+              </div>
             </div>
-            <p className="text-xl font-medium text-foreground/80 mb-8 leading-relaxed">• Установка Windows • Удаление вирусов • Установка программ • Замена и подключение устройств • Прошивка планшетов и телефонов и многое другое</p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <Button size="lg" onClick={() => scrollToSection("pricing")} className="group">
-                Стоимость услуг
-                <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-              </Button>
-              <Button size="lg" variant="outline" onClick={() => scrollToSection("contacts")}>
-                Связаться со мной
-              </Button>
+            <div className="hidden md:block">
+              <img 
+                src="https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/b2bbd0b2-8e9d-4b65-ba11-c3383e820c97.jpg"
+                alt="Рабочее место мастера"
+                className="rounded-2xl shadow-2xl w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>
