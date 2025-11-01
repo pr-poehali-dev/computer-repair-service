@@ -134,9 +134,7 @@ const Index = () => {
   const benefits = [
     { icon: "Clock", title: "Удобно", text: "Договоримся на удобное вам время" },
     { icon: "BadgeCheck", title: "Качественно", text: "Недельная гарантия на все работы" },
-    { icon: "Wallet", title: "Недорого", text: "Честные цены без накруток" },
-    { icon: "MapPin", title: "Зеленоград и окрестности", text: "Вызов по Зеленограду и ближайшим от него населённым пунктам. Удаленная поддержка по всей России" },
-    { icon: "MonitorSmartphone", title: "Удаленная поддержка", text: "Срочная удаленная помощь" }
+    { icon: "Wallet", title: "Недорого", text: "Честные цены без накруток" }
   ];
 
   return (
@@ -247,7 +245,7 @@ const Index = () => {
 
       <section id="about" className="py-16 px-4 bg-secondary/30">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {benefits.map((benefit, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow animate-fade-in">
                 <CardHeader>
