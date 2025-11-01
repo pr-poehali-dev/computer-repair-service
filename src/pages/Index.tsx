@@ -227,7 +227,7 @@ const Index = () => {
                   <span>И многое другое</span>
                 </div>
               </div>
-              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+              <div className="flex gap-4 justify-center md:justify-start">
                 <Button size="lg" onClick={() => scrollToSection("pricing")} className="group shadow-lg hover:shadow-xl transition-all">
                   <Icon name="Wallet" className="mr-2" size={20} />
                   Стоимость услуг
