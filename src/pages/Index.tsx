@@ -188,9 +188,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center animate-fade-in max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">Евгений Кранин — ваш компьютерный мастер</h1>
-            <p className="text-lg text-muted-foreground mb-4">Выезд по Зеленограду и ближайшим населенным пунктам.
- Удаленная компьютерная помощь по всей России.</p>
-
+            <p className="text-lg text-muted-foreground mb-4">Выезд по Зеленограду и ближайшим населенным пунктам. Удаленная компьютерная помощь по всей России.</p>
             <p className="text-lg text-muted-foreground mb-8">Установка Windows • Удаление вирусов • Установка программ • Замена и подключение устройств • Прошивка планшетов и телефонов и многое другое</p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" onClick={() => scrollToSection("pricing")} className="group">
