@@ -186,8 +186,8 @@ const Index = () => {
 
       <section id="main" className="pt-24 pb-16 px-4">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-start max-w-6xl mx-auto animate-fade-in">
-            <div className="text-center md:text-left">
+          <div className="grid md:grid-cols-[1.2fr,0.8fr] gap-12 items-start max-w-6xl mx-auto animate-fade-in">
+            <div className="text-center md:text-left order-1">
               <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight text-gray-800">
                 Евгений Кранин — ваш компьютерный мастер
               </h1>
@@ -240,11 +240,11 @@ const Index = () => {
                 </Button>
               </div>
             </div>
-            <div className="hidden md:block">
+            <div className="hidden md:block order-2">
               <img 
                 src="https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/347adc3c-140b-489d-bca7-35c79f7d3235.jpg"
                 alt="Рабочее место мастера"
-                className="rounded-2xl shadow-2xl w-full h-auto object-cover"
+                className="rounded-2xl shadow-2xl w-full h-auto object-cover max-w-md ml-auto"
               />
             </div>
           </div>
