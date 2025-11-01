@@ -233,15 +233,16 @@ const Index = () => {
                   Стоимость услуг
                   <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                 </Button>
-                <Button size="lg" variant="outline" onClick={() => scrollToSection("contacts")} className="shadow-md hover:shadow-lg transition-all border-2">
+                <Button size="lg" variant="outline" onClick={() => scrollToSection("contacts")} className="group shadow-md hover:shadow-lg transition-all border-2">
                   <Icon name="Phone" className="mr-2" size={20} />
                   Связаться со мной
+                  <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                 </Button>
               </div>
             </div>
             <div className="hidden md:block">
               <img 
-                src="https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/b2bbd0b2-8e9d-4b65-ba11-c3383e820c97.jpg"
+                src="https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/347adc3c-140b-489d-bca7-35c79f7d3235.jpg"
                 alt="Рабочее место мастера"
                 className="rounded-2xl shadow-2xl w-full h-auto object-cover"
               />
