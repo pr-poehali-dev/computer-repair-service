@@ -295,13 +295,28 @@ const Index = () => {
 
       <section id="aboutme" className="py-16 px-4">
         <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="mb-12">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">Обо мне</h2>
             </div>
             <Card>
               <CardContent className="pt-6">
-                <p className="text-xl text-muted-foreground">Более 20 лет опыта в ремонте компьютерной техники и IT-услугах</p>
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  <div className="flex-shrink-0">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/d78fe828-0ce0-40b8-a0cb-9db1f398036b.jpg"
+                      alt="Евгений Кранин"
+                      className="w-40 h-40 rounded-full object-cover border-4 border-primary/20"
+                    />
+                  </div>
+                  <div className="flex-1 text-center md:text-left">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      Меня зовут Евгений Кранин. Я мастер компьютерной техники, специалист по орг техники, программист, веб дизайнер. 
+                      Осуществляю полный спектр услуг в IT сфере. Долгое время работал в известных компаниях, а сейчас решил поработать на себя. 
+                      Более 20 лет опыта в ремонте компьютерной техники и IT-услугах.
+                    </p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
