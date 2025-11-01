@@ -186,8 +186,8 @@ const Index = () => {
 
       <section id="main" className="pt-24 pb-16 px-4">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-[1.2fr,0.8fr] gap-12 items-start max-w-6xl mx-auto animate-fade-in">
-            <div className="text-center md:text-left order-1">
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto animate-fade-in">
+            <div className="text-center md:text-left">
               <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight text-gray-800">
                 Евгений Кранин — ваш компьютерный мастер
               </h1>
@@ -227,7 +227,7 @@ const Index = () => {
                   <span>И многое другое</span>
                 </div>
               </div>
-              <div className="flex gap-4 justify-center md:justify-start">
+              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <Button size="lg" onClick={() => scrollToSection("pricing")} className="group shadow-lg hover:shadow-xl transition-all">
                   <Icon name="Wallet" className="mr-2" size={20} />
                   Стоимость услуг
@@ -240,11 +240,11 @@ const Index = () => {
                 </Button>
               </div>
             </div>
-            <div className="hidden md:block order-2">
+            <div className="hidden md:block">
               <img 
-                src="https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/7852bd5b-5154-42d8-a4ed-c9ec7e605d45.jpg"
-                alt="Компьютерный мастер"
-                className="rounded-2xl shadow-2xl w-full h-auto object-cover max-w-md ml-auto"
+                src="https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/347adc3c-140b-489d-bca7-35c79f7d3235.jpg"
+                alt="Рабочее место мастера"
+                className="rounded-2xl shadow-2xl w-full h-auto object-cover"
               />
             </div>
           </div>
