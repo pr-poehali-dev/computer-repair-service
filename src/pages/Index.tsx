@@ -192,7 +192,7 @@ const Index = () => {
               <p className="text-lg font-semibold text-primary">Выезд по Зеленограду и ближайшим населенным пунктам</p>
               <p className="text-lg font-semibold text-primary">Удаленная компьютерная помощь по всей России</p>
             </div>
-            <p className="text-lg text-muted-foreground mb-8">Установка Windows • Удаление вирусов • Установка программ • Замена и подключение устройств • Прошивка планшетов и телефонов и многое другое</p>
+            <p className="text-lg text-muted-foreground mb-8">• Установка Windows • Удаление вирусов • Установка программ • Замена и подключение устройств • Прошивка планшетов и телефонов и многое другое</p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" onClick={() => scrollToSection("pricing")} className="group">
                 Стоимость услуг
