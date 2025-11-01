@@ -242,8 +242,8 @@ const Index = () => {
             </div>
             <div className="hidden md:block order-2">
               <img 
-                src="https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/2ecfa1e8-6721-4c2e-a921-cc0e2f7e0cf3.jpg"
-                alt="Ремонт компьютеров"
+                src="https://cdn.poehali.dev/projects/08b56f8f-a671-4ad4-a473-6fc8868e8282/files/7852bd5b-5154-42d8-a4ed-c9ec7e605d45.jpg"
+                alt="Компьютерный мастер"
                 className="rounded-2xl shadow-2xl w-full h-auto object-cover max-w-md ml-auto"
               />
             </div>
